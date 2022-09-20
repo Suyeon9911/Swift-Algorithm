@@ -16,7 +16,7 @@ func input() -> String {
     return value
 }
 
-var value = readLine()!
+// var value = readLine()!
 var intValue = Int(readLine()!)!
 
 func changeInt(value: String) -> Int {
@@ -36,7 +36,7 @@ var nums = readLine()!.split(separator: " ").map {Int($0)!}
 var nums1 = readLine()!.components(separatedBy: " ").map {Int($0)!}
 
 // string 값으로 받은 값을 array로 자른다.
-let array = value.components(separatedBy: " ")
+// let array = value.components(separatedBy: " ")
 
 
 // Int
@@ -129,11 +129,11 @@ let subString = string[start...end]
 // 특정 charactor replace
 let replacing = "abcde".replacingOccurrences(of: "a", with: "+")
 
-print(replacing)
+// print(replacing)
 
 // 출력할 때 따옴표, 쌍따옴표 쓰기
 
-print("이렇게 \' 써준다")
+// print("이렇게 \' 써준다")
 
 // 앱 종료 exit(0)
 
@@ -160,50 +160,53 @@ print("이렇게 \' 써준다")
 
 let charactor: Character = "a"
 
-print(charactor.asciiValue!) // 97
+// print(charactor.asciiValue!) // 97
 
 
 // string에 식이 들어있을 때 그대로 계산하기
 let mathExpression = NSExpression(format: "3+4*6")
 let mathValue = mathExpression.expressionValue(with: nil, context: nil) as! Int
 
-print(mathValue)
+// print(mathValue)
 
 // stride(from:1, to:5, by:2)       // open range..5 불포함 1,3 까지만
 // stride(from:1, through:5, by:2)  // closed range..5 포함 1,3,5까지
 
-for even in stride(from:1, to:5, by:2) {
-    print(even)
+func basicFunction() {
+    for even in stride(from:1, to:5, by:2) {
+        print(even)
+    }
+
+    // Dictionary 사용하기
+    var dic: [Int: String] = [:]
+
+    dic = [1:"a", 2:"b", 3:"c"]
+
+    // 값 수정하기
+    dic.updateValue("c", forKey: 2)
+    dic[3] = "d"
+
+    print(dic)
+
+    // 접근 하려면 언래핑 dic[1]!
+
+    for (key, value) in dic {
+        print(key)            // 1,2,3
+        print(value)          // a,b,c
+    }
+
+    // 단, 순서는 뒤죽박죽이다!!!! (Dictionary는 순서가 없음)
+
+    // dic.removeValue(forKey:4)  // 특정 키값 삭제
+    // dic.removeAll()            // 전체 삭제
+
+    // key를 바꿀경우 지우고 다시 넣어줘야함
+
+    // dictionary key로 sort하기
+
+    let sort = dic.sorted(by: {$0.key < $1.key})
+    print(sort)
+
 }
 
-
-// Dictionary 사용하기
-var dic: [Int: String] = [:]
-
-dic = [1:"a", 2:"b", 3:"c"]
-
-// 값 수정하기
-dic.updateValue("c", forKey: 2)
-dic[3] = "d"
-
-print(dic)
-
-// 접근 하려면 언래핑 dic[1]!
-
-for (key, value) in dic {
-    print(key)            // 1,2,3
-    print(value)          // a,b,c
-}
-
-// 단, 순서는 뒤죽박죽이다!!!! (Dictionary는 순서가 없음)
-
-// dic.removeValue(forKey:4)  // 특정 키값 삭제
-// dic.removeAll()            // 전체 삭제
-
-// key를 바꿀경우 지우고 다시 넣어줘야함
-
-// dictionary key로 sort하기
-
-let sort = dic.sorted(by: {$0.key < $1.key})
-print(sort)
 
