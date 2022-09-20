@@ -15,6 +15,7 @@
 		4D57156028D894FE0033730A /* Practice1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57155F28D894FE0033730A /* Practice1.swift */; };
 		4D57156228D895DC0033730A /* Practice2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57156128D895DC0033730A /* Practice2.swift */; };
 		4D57156428D899BE0033730A /* Practice3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57156328D899BE0033730A /* Practice3.swift */; };
+		4D57156628D9975B0033730A /* Practice4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57156528D9975B0033730A /* Practice4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,7 @@
 		4D57155F28D894FE0033730A /* Practice1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice1.swift; sourceTree = "<group>"; };
 		4D57156128D895DC0033730A /* Practice2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice2.swift; sourceTree = "<group>"; };
 		4D57156328D899BE0033730A /* Practice3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice3.swift; sourceTree = "<group>"; };
+		4D57156528D9975B0033730A /* Practice4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				4D57155F28D894FE0033730A /* Practice1.swift */,
 				4D57156128D895DC0033730A /* Practice2.swift */,
 				4D57156328D899BE0033730A /* Practice3.swift */,
+				4D57156528D9975B0033730A /* Practice4.swift */,
 			);
 			path = Level1;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				4D57156428D899BE0033730A /* Practice3.swift in Sources */,
 				4D57156028D894FE0033730A /* Practice1.swift in Sources */,
 				4D57155228D7994F0033730A /* Basic.swift in Sources */,
+				4D57156628D9975B0033730A /* Practice4.swift in Sources */,
 				4D57156228D895DC0033730A /* Practice2.swift in Sources */,
 				4D57154828D798DF0033730A /* main.swift in Sources */,
 				4D57155428D79B610033730A /* A+B.swift in Sources */,
