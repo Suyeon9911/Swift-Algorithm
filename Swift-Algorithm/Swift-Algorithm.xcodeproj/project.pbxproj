@@ -50,6 +50,7 @@
 		4DCD228A28E9BBEB009D1260 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD228928E9BBEB009D1260 /* Queue.swift */; };
 		4DCD228C28E9E951009D1260 /* Recursive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD228B28E9E951009D1260 /* Recursive.swift */; };
 		4DCD229028EA0234009D1260 /* 문자열다루기기본.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD228F28EA0234009D1260 /* 문자열다루기기본.swift */; };
+		4DCD229228EA0C78009D1260 /* 약수의 개수와 덧셈.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD229128EA0C78009D1260 /* 약수의 개수와 덧셈.swift */; };
 		4DCD229628EA0E3D009D1260 /* 음료수 얼려 먹기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD229528EA0E3D009D1260 /* 음료수 얼려 먹기.swift */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +111,7 @@
 		4DCD228928E9BBEB009D1260 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		4DCD228B28E9E951009D1260 /* Recursive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recursive.swift; sourceTree = "<group>"; };
 		4DCD228F28EA0234009D1260 /* 문자열다루기기본.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "문자열다루기기본.swift"; sourceTree = "<group>"; };
+		4DCD229128EA0C78009D1260 /* 약수의 개수와 덧셈.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "약수의 개수와 덧셈.swift"; sourceTree = "<group>"; };
 		4DCD229528EA0E3D009D1260 /* 음료수 얼려 먹기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "음료수 얼려 먹기.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,6 +211,7 @@
 				4DCD227828E1C31F009D1260 /* 내적.swift */,
 				4DCD228028E9A41D009D1260 /* 문자열 내림차순으로 배치하기.swift */,
 				4DCD228F28EA0234009D1260 /* 문자열다루기기본.swift */,
+				4DCD229128EA0C78009D1260 /* 약수의 개수와 덧셈.swift */,
 			);
 			path = Level1;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				4DCD225728DD8B66009D1260 /* x만큼간격이있는n개의숫자.swift in Sources */,
 				4DCD226528DDBE53009D1260 /* 수박수박수박수박수박수? .swift in Sources */,
 				4DCD226328DDBC7D009D1260 /* 핸드폰번호가리기.swift in Sources */,
+				4DCD229228EA0C78009D1260 /* 약수의 개수와 덧셈.swift in Sources */,
 				4DCD226A28DEFD25009D1260 /* Truck.swift in Sources */,
 				4D57156F28DB74A10033730A /* 문자열 내 p와 y의 개수.swift in Sources */,
 				4DCD227D28E1DF21009D1260 /* 왕실의나이트.swift in Sources */,
