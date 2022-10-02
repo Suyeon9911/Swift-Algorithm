@@ -218,14 +218,9 @@
 		4DCD224B28DCB51A009D1260 /* Book */ = {
 			isa = PBXGroup;
 			children = (
+				4DCD228E28E9FCDE009D1260 /* DFS&BFS */,
+				4DCD228D28E9FCA8009D1260 /* 구현 */,
 				4DCD228628E9BBC3009D1260 /* 자료구조 */,
-				4DCD224C28DCB545009D1260 /* 상하좌우.swift */,
-				4DCD227A28E1C842009D1260 /* 시각.swift */,
-				4DCD227C28E1DF20009D1260 /* 왕실의나이트.swift */,
-				4DCD227E28E4CF7C009D1260 /* 게임개발.swift */,
-				4DCD228228E9A576009D1260 /* BFS.swift */,
-				4DCD228428E9A580009D1260 /* DFS.swift */,
-				4DCD228B28E9E951009D1260 /* Recursive.swift */,
 			);
 			path = Book;
 			sourceTree = "<group>";
@@ -248,6 +243,28 @@
 			);
 			name = "자료구조";
 			path = "자료구조";
+			sourceTree = "<group>";
+		};
+		4DCD228D28E9FCA8009D1260 /* 구현 */ = {
+			isa = PBXGroup;
+			children = (
+				4DCD224C28DCB545009D1260 /* 상하좌우.swift */,
+				4DCD227A28E1C842009D1260 /* 시각.swift */,
+				4DCD227C28E1DF20009D1260 /* 왕실의나이트.swift */,
+				4DCD227E28E4CF7C009D1260 /* 게임개발.swift */,
+			);
+			name = "구현";
+			path = "구현";
+			sourceTree = "<group>";
+		};
+		4DCD228E28E9FCDE009D1260 /* DFS&BFS */ = {
+			isa = PBXGroup;
+			children = (
+				4DCD228428E9A580009D1260 /* DFS.swift */,
+				4DCD228228E9A576009D1260 /* BFS.swift */,
+				4DCD228B28E9E951009D1260 /* Recursive.swift */,
+			);
+			path = "DFS&BFS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
