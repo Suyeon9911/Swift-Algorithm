@@ -1,0 +1,8 @@
+//
+//  1182_부분수열의 합.swift
+//  Swift-Algorithm
+//
+//  Created by 김수연 on 2022/10/03.
+//
+
+import Foundation
