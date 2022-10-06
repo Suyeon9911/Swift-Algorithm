@@ -101,6 +101,7 @@
 		4DCD63E928EE259F005AA1D9 /* 떡볶이떡만들기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD63E828EE259F005AA1D9 /* 떡볶이떡만들기.swift */; };
 		4DCD63EB28EF0F71005AA1D9 /* 위에서아래로.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD63EA28EF0F71005AA1D9 /* 위에서아래로.swift */; };
 		4DCD63ED28EF0F8C005AA1D9 /* 성적낮은순출력.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD63EC28EF0F8C005AA1D9 /* 성적낮은순출력.swift */; };
+		4DCD63EF28EF0F98005AA1D9 /* 두 배열의 원소교체.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD63EE28EF0F98005AA1D9 /* 두 배열의 원소교체.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -211,6 +212,7 @@
 		4DCD63E828EE259F005AA1D9 /* 떡볶이떡만들기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "떡볶이떡만들기.swift"; sourceTree = "<group>"; };
 		4DCD63EA28EF0F71005AA1D9 /* 위에서아래로.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "위에서아래로.swift"; sourceTree = "<group>"; };
 		4DCD63EC28EF0F8C005AA1D9 /* 성적낮은순출력.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "성적낮은순출력.swift"; sourceTree = "<group>"; };
+		4DCD63EE28EF0F98005AA1D9 /* 두 배열의 원소교체.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "두 배열의 원소교체.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -477,6 +479,7 @@
 				4DCD63DD28EE244A005AA1D9 /* Swift에서 정렬.swift */,
 				4DCD63EA28EF0F71005AA1D9 /* 위에서아래로.swift */,
 				4DCD63EC28EF0F8C005AA1D9 /* 성적낮은순출력.swift */,
+				4DCD63EE28EF0F98005AA1D9 /* 두 배열의 원소교체.swift */,
 			);
 			name = "정렬";
 			path = "정렬";
@@ -560,6 +563,7 @@
 				4DCD63DA28EE1B34005AA1D9 /* 퀵정렬.swift in Sources */,
 				4DCD22B728EA2249009D1260 /* 11286_절댓값힙.swift in Sources */,
 				4DCD227428E03602009D1260 /* 가운데글자 가져오기.swift in Sources */,
+				4DCD63EF28EF0F98005AA1D9 /* 두 배열의 원소교체.swift in Sources */,
 				4DCD229C28EA20EF009D1260 /* 2178_미로탐색.swift in Sources */,
 				4DCD225F28DDB078009D1260 /* StringUtil.swift in Sources */,
 				4DCD22AE28EA2201009D1260 /* 1931_회의실배정.swift in Sources */,
