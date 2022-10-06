@@ -97,6 +97,7 @@
 		4DCD63E128EE2561005AA1D9 /* 순차탐색.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD63E028EE2561005AA1D9 /* 순차탐색.swift */; };
 		4DCD63E328EE2567005AA1D9 /* 이진탐색.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD63E228EE2567005AA1D9 /* 이진탐색.swift */; };
 		4DCD63E528EE2587005AA1D9 /* 이진탐색트리.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD63E428EE2587005AA1D9 /* 이진탐색트리.swift */; };
+		4DCD63E728EE2597005AA1D9 /* 부품찾기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD63E628EE2597005AA1D9 /* 부품찾기.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -203,6 +204,7 @@
 		4DCD63E028EE2561005AA1D9 /* 순차탐색.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "순차탐색.swift"; sourceTree = "<group>"; };
 		4DCD63E228EE2567005AA1D9 /* 이진탐색.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "이진탐색.swift"; sourceTree = "<group>"; };
 		4DCD63E428EE2587005AA1D9 /* 이진탐색트리.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "이진탐색트리.swift"; sourceTree = "<group>"; };
+		4DCD63E628EE2597005AA1D9 /* 부품찾기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "부품찾기.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -478,6 +480,7 @@
 				4DCD63E028EE2561005AA1D9 /* 순차탐색.swift */,
 				4DCD63E228EE2567005AA1D9 /* 이진탐색.swift */,
 				4DCD63E428EE2587005AA1D9 /* 이진탐색트리.swift */,
+				4DCD63E628EE2597005AA1D9 /* 부품찾기.swift */,
 			);
 			name = "이진탐색";
 			path = "이진탐색";
@@ -568,6 +571,7 @@
 				4DCD227B28E1C842009D1260 /* 시각.swift in Sources */,
 				4DCD227728E1C126009D1260 /* 없는숫자더하기.swift in Sources */,
 				4DCD22DD28EA2368009D1260 /* 6198_옥상정원꾸미기.swift in Sources */,
+				4DCD63E728EE2597005AA1D9 /* 부품찾기.swift in Sources */,
 				4DCD22C828EA22D9009D1260 /* 10974_모든순열.swift in Sources */,
 				4DCD226E28DF7E5E009D1260 /* 나누어떨어지는 숫자배열.swift in Sources */,
 				4D57155228D7994F0033730A /* Basic.swift in Sources */,
