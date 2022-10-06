@@ -91,6 +91,9 @@
 		4DCD22E828ED8C85009D1260 /* 직사각형별찍기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD22E728ED8C85009D1260 /* 직사각형별찍기.swift */; };
 		4DCD63D628EE12E0005AA1D9 /* 선택정렬.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD63D528EE12E0005AA1D9 /* 선택정렬.swift */; };
 		4DCD63D828EE1768005AA1D9 /* 삽입정렬.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD63D728EE1768005AA1D9 /* 삽입정렬.swift */; };
+		4DCD63E128EE2561005AA1D9 /* 순차탐색.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD63E028EE2561005AA1D9 /* 순차탐색.swift */; };
+		4DCD63E328EE2567005AA1D9 /* 이진탐색.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD63E228EE2567005AA1D9 /* 이진탐색.swift */; };
+		4DCD63E528EE2587005AA1D9 /* 이진탐색트리.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD63E428EE2587005AA1D9 /* 이진탐색트리.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -191,6 +194,9 @@
 		4DCD22E728ED8C85009D1260 /* 직사각형별찍기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "직사각형별찍기.swift"; sourceTree = "<group>"; };
 		4DCD63D528EE12E0005AA1D9 /* 선택정렬.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "선택정렬.swift"; sourceTree = "<group>"; };
 		4DCD63D728EE1768005AA1D9 /* 삽입정렬.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "삽입정렬.swift"; sourceTree = "<group>"; };
+		4DCD63E028EE2561005AA1D9 /* 순차탐색.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "순차탐색.swift"; sourceTree = "<group>"; };
+		4DCD63E228EE2567005AA1D9 /* 이진탐색.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "이진탐색.swift"; sourceTree = "<group>"; };
+		4DCD63E428EE2587005AA1D9 /* 이진탐색트리.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "이진탐색트리.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,6 +319,7 @@
 		4DCD224B28DCB51A009D1260 /* Book */ = {
 			isa = PBXGroup;
 			children = (
+				4DCD63DF28EE2532005AA1D9 /* 이진탐색 */,
 				4DCD63D428EE12D8005AA1D9 /* 정렬 */,
 				4DCD228E28E9FCDE009D1260 /* DFS&BFS */,
 				4DCD228D28E9FCA8009D1260 /* 구현 */,
@@ -456,6 +463,17 @@
 			path = "정렬";
 			sourceTree = "<group>";
 		};
+		4DCD63DF28EE2532005AA1D9 /* 이진탐색 */ = {
+			isa = PBXGroup;
+			children = (
+				4DCD63E028EE2561005AA1D9 /* 순차탐색.swift */,
+				4DCD63E228EE2567005AA1D9 /* 이진탐색.swift */,
+				4DCD63E428EE2587005AA1D9 /* 이진탐색트리.swift */,
+			);
+			name = "이진탐색";
+			path = "이진탐색";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -546,6 +564,7 @@
 				4DCD227028DF827C009D1260 /* 제일작은수제거.swift in Sources */,
 				4DCD22D428EA2321009D1260 /* 1436_영화감독 숌.swift in Sources */,
 				4DCD226128DDB28D009D1260 /* 서울에서김서방찾기.swift in Sources */,
+				4DCD63E328EE2567005AA1D9 /* 이진탐색.swift in Sources */,
 				4DCD22D028EA230A009D1260 /* 1018_체스판 다시 칠하기.swift in Sources */,
 				4DCD228C28E9E951009D1260 /* Recursive.swift in Sources */,
 				4DCD228328E9A576009D1260 /* BFS.swift in Sources */,
@@ -558,6 +577,7 @@
 				4DCD22DB28EA2359009D1260 /* 9012_괄호.swift in Sources */,
 				4DCD22AC28EA21F6009D1260 /* 10844_쉬운계단수.swift in Sources */,
 				4DCD229A28EA20AC009D1260 /* 1260_DFS&BFS.swift in Sources */,
+				4DCD63E528EE2587005AA1D9 /* 이진탐색트리.swift in Sources */,
 				4DCD63D828EE1768005AA1D9 /* 삽입정렬.swift in Sources */,
 				4DCD22D228EA2313009D1260 /* 7568_덩치.swift in Sources */,
 				4DCD224F28DCD281009D1260 /* 하샤드 수.swift in Sources */,
@@ -574,6 +594,7 @@
 				4DCD226328DDBC7D009D1260 /* 핸드폰번호가리기.swift in Sources */,
 				4DCD229228EA0C78009D1260 /* 약수의 개수와 덧셈.swift in Sources */,
 				4DCD226A28DEFD25009D1260 /* Truck.swift in Sources */,
+				4DCD63E128EE2561005AA1D9 /* 순차탐색.swift in Sources */,
 				4DCD63D628EE12E0005AA1D9 /* 선택정렬.swift in Sources */,
 				4D57156F28DB74A10033730A /* 문자열 내 p와 y의 개수.swift in Sources */,
 				4DCD22A828EA21DE009D1260 /* 11052_카드구매하기.swift in Sources */,
