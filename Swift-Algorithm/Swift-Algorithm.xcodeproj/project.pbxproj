@@ -100,6 +100,7 @@
 		4DCD63E728EE2597005AA1D9 /* 부품찾기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD63E628EE2597005AA1D9 /* 부품찾기.swift */; };
 		4DCD63E928EE259F005AA1D9 /* 떡볶이떡만들기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD63E828EE259F005AA1D9 /* 떡볶이떡만들기.swift */; };
 		4DCD63EB28EF0F71005AA1D9 /* 위에서아래로.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD63EA28EF0F71005AA1D9 /* 위에서아래로.swift */; };
+		4DCD63ED28EF0F8C005AA1D9 /* 성적낮은순출력.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD63EC28EF0F8C005AA1D9 /* 성적낮은순출력.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -209,6 +210,7 @@
 		4DCD63E628EE2597005AA1D9 /* 부품찾기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "부품찾기.swift"; sourceTree = "<group>"; };
 		4DCD63E828EE259F005AA1D9 /* 떡볶이떡만들기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "떡볶이떡만들기.swift"; sourceTree = "<group>"; };
 		4DCD63EA28EF0F71005AA1D9 /* 위에서아래로.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "위에서아래로.swift"; sourceTree = "<group>"; };
+		4DCD63EC28EF0F8C005AA1D9 /* 성적낮은순출력.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "성적낮은순출력.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -474,6 +476,7 @@
 				4DCD63DB28EE1FEA005AA1D9 /* 계수정렬.swift */,
 				4DCD63DD28EE244A005AA1D9 /* Swift에서 정렬.swift */,
 				4DCD63EA28EF0F71005AA1D9 /* 위에서아래로.swift */,
+				4DCD63EC28EF0F8C005AA1D9 /* 성적낮은순출력.swift */,
 			);
 			name = "정렬";
 			path = "정렬";
@@ -564,6 +567,7 @@
 				4DCD22E628ED89ED009D1260 /* 부족한금액계산.swift in Sources */,
 				4DCD225928DD9046009D1260 /* 나머지가1이되는수찾기.swift in Sources */,
 				4DCD228128E9A41D009D1260 /* 문자열 내림차순으로 배치하기.swift in Sources */,
+				4DCD63ED28EF0F8C005AA1D9 /* 성적낮은순출력.swift in Sources */,
 				4DCD22B928EA2255009D1260 /* 1655_가운데를말해요.swift in Sources */,
 				4DCD226C28DF01F1009D1260 /* Emoticon.swift in Sources */,
 				4DCD224D28DCB545009D1260 /* 상하좌우.swift in Sources */,
