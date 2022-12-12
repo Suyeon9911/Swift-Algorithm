@@ -1,15 +1,8 @@
 import Foundation
 
-func solution(_ n: Int) -> Int {
+func solution(_ n:Int) -> Int
+{
+    answer:Int = 0
     
-   var answer : Int = n + 1
- 
-    while true {
-        if n.nonzeroBitCount == answer.nonzeroBitCount {
-            break;
-        }
-        answer += 1
-    }
- 
     return answer
 }
