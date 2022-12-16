@@ -18,7 +18,11 @@ func solution(_ progresses:[Int], _ speeds:[Int]) -> [Int] {
         // progresses에서 100프로 이상인 것들을 제거해준다 -> 앞에서부터..
 
         for i in 0..<progresses.count {
-            progresses[i] += speeds[i]
+            if progresses[i] >= 100 {
+                continue
+            } else {
+                progresses[i] += speeds[i]
+            }
         }
 
         var count = 0
