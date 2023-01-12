@@ -37,7 +37,6 @@ func solution(_ board:[[Int]], _ moves:[Int]) -> Int {
         }
 
         // 바구니에서 똑같은거 두개 있으면 터짐 !
-
     }
 
 
