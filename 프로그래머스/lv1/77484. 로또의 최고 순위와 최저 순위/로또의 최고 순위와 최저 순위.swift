@@ -21,12 +21,13 @@ func solution(_ lottos:[Int], _ win_nums:[Int]) -> [Int] {
     // 0이 1개면 -> +1 or 0, 0이 두개면 0, 1, 2  0 이 3개면 0,1,2,3 .. 
     // 0의 개수 +1 만큼의 경우의 수 가 생김 
     
-    answer.append(sameNumber) // 0 이 있음에도 아무것도 못맞춘 경우 
+    answer.append(sameNumber) // 0 이 있음에도 아무것도 못맞춘 경우 or 0이 없었을 경우 
     
-    for i in 0..<zeroCount {
-        // 0이 있는데 1개라도 맞췄을 경우?? 
-        let i = i+1
-        answer.append(sameNumber+i)
+    if zeroCount > 0 {
+        // 0이 있는데 맞출 경우 -> 0개수 만큼 
+        for i in 1...zeroCount {
+            answer.append(sameNumber+i)
+        }
     }
     
     for i in 0..<answer.count {
