@@ -33,9 +33,13 @@ func solution(_ progresses:[Int], _ speeds:[Int]) -> [Int] {
 
         progresses.removeFirst(count)
         speeds.removeFirst(count)
-        answer.append(count)
+        
+        // 배포가 된다면
+        if count != 0 {
+            answer.append(count)
+        }
     }
 
 
-    return answer.filter { $0 != 0 }
+    return answer
 }
