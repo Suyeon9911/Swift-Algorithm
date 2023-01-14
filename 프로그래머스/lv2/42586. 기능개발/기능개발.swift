@@ -16,13 +16,9 @@ func solution(_ progresses:[Int], _ speeds:[Int]) -> [Int] {
 
         // 하루가 지날때마다 progresses에 speeds를 더해준다.
         // progresses에서 100프로 이상인 것들을 제거해준다 -> 앞에서부터..
-
-        for i in 0..<progresses.count {
-            if progresses[i] >= 100 {
-                continue
-            } else {
-                progresses[i] += speeds[i]
-            }
+        
+        for i in progresses.indices {
+            progresses[i] += speeds[i]
         }
 
         var count = 0
