@@ -17,7 +17,7 @@ func solution(_ id_list:[String], _ report:[String], _ k:Int) -> [Int] {
     for i in Set(report) {
         let splited = i.split(separator: " ").map { String($0) }
         // 신고당한 유저 : key 신고한 유저들 배열 형태의 value
-        userDic[splited[1]] = (userDic[splited[1]] ?? []) + [splited[0]]
+        userDic[splited[1], default: []] += [splited[0]]
 
         // 신고 당한 사람 몇번 당했는지 세주기
         reportedDic[splited[1]] = (reportedDic[splited[1]] ?? 0) + 1
