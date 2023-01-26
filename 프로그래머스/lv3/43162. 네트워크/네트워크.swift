@@ -2,24 +2,27 @@ import Foundation
 
 func solution(_ n:Int, _ computers:[[Int]]) -> Int {
     
-    var network: [[Int]] = Array(repeating: [], count: n)
-    var visited: [Bool] = Array(repeating: false, count: n)
+    // var network: [[Int]] = Array(repeating: [], count: n)
+    // var visited: [Bool] = Array(repeating: false, count: n)
     
-    for i in 0..<computers.count {
-        for j in 0..<computers.count {
-            if computers[i][j] == 1 {
-                network[i].append(j)
-            }
-        }
-    }
+     var visitedSet: Set<Int> = []
     
-    print(network)
+    // for i in 0..<computers.count {
+    //     for j in 0..<computers.count {
+    //         if computers[i][j] == 1 {
+    //             network[i].append(j)
+    //         }
+    //     }
+    // }
+    
+    //print(network)
     
     func dfs(start: Int) {
-        visited[start] = true
+        // 1. 방문처리 
+        visitedSet.insert(start)
 
-        for i in network[start] {
-            if !visited[i] {
+        for i in computers[start].indices {
+            if !visitedSet.contains(i) && computers[start][i] == 1 {
                 dfs(start: i)
             }
         }
@@ -27,8 +30,8 @@ func solution(_ n:Int, _ computers:[[Int]]) -> Int {
     
     var count = 0 
     
-    for i in 0..<network.count {
-        if !visited[i] {
+    for i in computers.indices {
+        if !visitedSet.contains(i) {
             dfs(start: i)
             count += 1
         }
