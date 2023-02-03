@@ -11,8 +11,7 @@ func solution(_ orders:[String], _ course:[Int]) -> [String] {
     
     let orders = orders.sorted()
     var menuCombination: [[String]: Int] = [:]
-    
-    var result:[String] = []
+    var result: [String] = []
     
     func combination(_ targetArray: [String],_ rCount: Int,_ index: Int,_ nowArray: [String]) {
         if nowArray.count == rCount {
@@ -26,35 +25,23 @@ func solution(_ orders:[String], _ course:[Int]) -> [String] {
         }
     } 
     
-    for order in orders {
-        // 하나의 주문에 대해서
-        for i in course {
-            // 주어진 코스 메뉴 수 만큼 조합만들기 
+    for i in course {
+        // 2,3,4 개로 조합만들기 
+        for order in orders {
+            // 하나의 주문에 대해서 조합 만들기
             let orderArray = Array(order).map { String($0) }
             combination(orderArray,i,0,[])
         }
-        // print(menuCombination)
-    }
-    
-    for i in course {
-        // i 개의 조합 중 최대 값. count가 같아야 함.
-        var tempDic: [String: Int] = [:]
+        // i 개의 조합 중 최대 값.
+        let max = menuCombination.values.max()
         
-        for (key, value) in menuCombination {
-            if key.count == i {
-                tempDic[String(key.joined().sorted())] = value
-            }
-        }
-        
-        let max = tempDic.values.max()
-        
-        for (key,value) in tempDic {
+        for (key,value) in menuCombination {
             if value == max && value >= 2 {
-                result.append(key)
+                result.append(String(key.joined().sorted()))
             }
         }
-        
-        tempDic = [:]
+
+        menuCombination = [:]
     }
     
     return result.sorted()
