@@ -34,16 +34,5 @@ func solution(_ board:[[Int]]) -> Int {
        }
    }
 
-    // 이건 내가 생각해본 방법인데..
-
-    // for i in 0..<board.count-1 {
-    //     for j in 0..<board[0].count-1 {
-    //         if board[i][j] >= 1 && board[i+1][j+1] == 1 {
-    //             board[i+1][j+1] += board[i][j] // 여기서 board의 i,j 값을 더해도 될까?
-    //             if board[i+1][j+1] > max { max = board[i+1][j+1] } // max 값 갱신
-    //         }
-    //     }
-    // }
-
     return max * max
 }
