@@ -1,46 +1,39 @@
-
     let n = Int(readLine()!)!
     let m = Int(readLine()!)!
 
-    var cities = [Int](0..<n)
+    var visited: [Bool] = Array(repeating: false, count: n)
 
-    func findParent(n: Int) -> Int {
-        if cities[n] == n {
-            return n
-        }
-
-        cities[n] = findParent(n: cities[n])
-        return cities[n]
-    }
-
-    func union(a: Int, b: Int) {
-        let rootA = findParent(n: a)
-        let rootB = findParent(n: b)
-
-        if rootA < rootB {
-            cities[rootB] = rootA
-        } else {
-            cities[rootA] = rootB
-        }
-    }
+    var cities: [[Int]] = []
 
     for i in 0..<n {
         let connects = readLine()!.split(separator: " ").map { Int(String($0))! }
-        for j in i+1..<n {
+        cities.append([])
+        for j in 0..<connects.count {
             if connects[j] == 1 {
-                union(a: i, b: j)
-            } else {
-                continue
+                cities[i].append(j)
+            }
+        }
+    }
+
+    func dfs(start: Int) {
+        visited[start] = true
+
+        for i in cities[start] {
+            if !visited[i] {
+                dfs(start: i)
             }
         }
     }
 
     let plan = readLine()!.split(separator: " ").map { Int(String($0))!-1 }
-    let firstPlan = findParent(n: plan[0])
+
+    dfs(start: plan[0])
+
     var check = true
 
     for i in 1..<m {
-        if findParent(n: plan[i]) != firstPlan {
+        // 아 플랜에 있는 모든 여행지가 방문처리 되어 있어야함.
+        if !visited[plan[i]] {
             check = false
             break
         } else {
