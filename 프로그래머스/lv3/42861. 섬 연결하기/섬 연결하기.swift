@@ -34,7 +34,7 @@ func solution(_ n:Int, _ costs:[[Int]]) -> Int {
     var edges = 0 
     
     for i in sortedCosts {
-        if edges == costs.count {
+        if edges == n-1 {
             break
         }
         
