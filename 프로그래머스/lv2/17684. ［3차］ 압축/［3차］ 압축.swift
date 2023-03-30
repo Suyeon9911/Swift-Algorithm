@@ -26,17 +26,11 @@ func solution(_ msg:String) -> [Int] {
     var endIdx = 0
 
     func changeString() -> String {
-        if startIdx == 0 {
-            return String(msgArray[startIdx])
-        }
-
-        if startIdx == msgArray.count-1 {
+        if startIdx == 0 || startIdx == msgArray.count-1 {
             return String(msgArray[startIdx])
         }
 
         var string = String(msgArray[startIdx...endIdx])
-        // print(string)
-        //  endIdx = end
 
         while true {
 
@@ -61,8 +55,6 @@ func solution(_ msg:String) -> [Int] {
     while endIdx < msgArray.count {
 
         let changedString = changeString()
-
-
         result.append(dictionary[changedString]!)
 
         if endIdx == msgArray.count-1 {
