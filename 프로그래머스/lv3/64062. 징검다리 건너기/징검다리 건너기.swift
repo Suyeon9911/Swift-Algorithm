@@ -2,34 +2,20 @@ import Foundation
 
 func solution(_ stones:[Int], _ k:Int) -> Int {
     
-    var left = 1
-    var right = 200000000
+    var start = 0
+    var end = start+k-1
     
-    while left < right {
+    var newValue = 200000000
+    
+    while end < stones.count {
         
-        let mid = (left + right) / 2
-        var isPass = true
-        var jumpCount = 0
+        var windowMax = stones[start...end].max()!
+        newValue = min(newValue, windowMax)
         
-        for i in 0..<stones.count {
-            if stones[i] - mid <= 0 {
-                jumpCount += 1
-            } else {
-                jumpCount = 0
-            }
-            
-            if jumpCount >= k {
-                isPass = false
-                break
-            }
-        }
-        
-        if isPass {
-            left = mid + 1
-        } else {
-            right = mid
-        }
+        start += 1
+        end += 1
     }
     
-    return left
+    return newValue
+    
 }
