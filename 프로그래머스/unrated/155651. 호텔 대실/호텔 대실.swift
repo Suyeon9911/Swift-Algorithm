@@ -27,8 +27,6 @@ func solution(_ book_time:[[String]]) -> Int {
         }
     })
     
-    print(sortedEnterTime)
-    
     // 2. 현재 사용중인 방에서 퇴실 + 10분이랑 -> 입실 시간이 겹치면 다른 방 써야됨.
     var roomArray: [(Int, Int)] = [sortedEnterTime[0][1]] // 처음 입실하는 방은 무조건 1번
     
@@ -36,23 +34,15 @@ func solution(_ book_time:[[String]]) -> Int {
         for j in 0..<roomArray.count {
             if (roomArray[j].0 * 60) + roomArray[j].1 <= (sortedEnterTime[i][0].0 * 60) + sortedEnterTime[i][0].1 {
                 // 퇴실 + 청소 끝난 방. // 바로 들어갈 수 있듬.
-                print((roomArray[j].0 * 60) + roomArray[j].1)
-                print((sortedEnterTime[i][1].0 * 60) + sortedEnterTime[i][1].1)
-                
                 roomArray[j] = sortedEnterTime[i][1]
                 break
             }
             
             // 룸을 다 돌았는데 들어갈 수 있는 방이 없으면, 그냥 추가해주세용
             if j == roomArray.count-1 {
-                print("다 돌음", sortedEnterTime[i][1])
                 roomArray.append(sortedEnterTime[i][1])
             }
         }
     }
-    
-    print(roomArray)
-    
-    
     return roomArray.count
 }
