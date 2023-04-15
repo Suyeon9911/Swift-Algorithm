@@ -32,11 +32,13 @@ func solution(_ user_id:[String], _ banned_id:[String]) -> Int {
         }
     }
     
+    print(idArr)
+    
     // 조합을 담을 Set 자료형 answer
     // OR 아예 중복검사를 해서 조합을 만든 다음에 count만 세어주기
     var answer: [[String]] = []
     
-    func dfs(_ id: [[String]],_ depth: Int,_ answer:inout [[String]],_ history: [String]) {
+    func dfs(_ id: [[String]],_ depth: Int,_ history: [String]) {
         if depth == id.count {
             answer.append(history.sorted())
             return 
@@ -46,7 +48,7 @@ func solution(_ user_id:[String], _ banned_id:[String]) -> Int {
             for i in id[depth] {
                 var newHistory = history
                 newHistory.append(i)
-                dfs(id, depth+1, &answer, newHistory)
+                dfs(id, depth+1, newHistory)
             }
         } else {
             for i in id[depth] {
@@ -54,14 +56,17 @@ func solution(_ user_id:[String], _ banned_id:[String]) -> Int {
                 if !history.contains(i) {
                     var newHistory = history
                     newHistory.append(i)
-                        dfs(id, depth+1, &answer, newHistory)
+                        dfs(id, depth+1, newHistory)
                 }
             }
         }
     
     }
     
-    dfs(idArr,0,&answer,[])
+    dfs(idArr,0,[])
+    
+    // print(answer) answer은 굳이 파라미터로 주고 받을 필요없음.
+    // 피로도에서는 계속해서 max 값 갱신 때무
     
     return Set(answer).count
 }
