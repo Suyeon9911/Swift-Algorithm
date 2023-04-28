@@ -16,7 +16,7 @@ func isManhattanDistance(_ places:[[String]]) -> Bool {
                     if (0..<5).contains(nx) && (0..<5).contains(ny) && places[nx][ny] == "P" {
                         
                         if row == nx {          // 같은 행에 다른 응시자가 있을 때
-                            if ny - col == 0 {  // 바로 옆에 있을 때
+                            if ny - col == 1 {  // 바로 옆에 있을 때
                                 return false
                             } else {            // 한 칸 떨어져 있을 때
                                 if places[row][col+1] != "X" {
@@ -24,7 +24,7 @@ func isManhattanDistance(_ places:[[String]]) -> Bool {
                                 }
                             }
                         } else if col == ny {   // 같은 열에 다른 응시자가 있을 때
-                            if nx - row == 0 {  // 바로 옆에 있을 때
+                            if nx - row == 1 {  // 바로 옆에 있을 때
                                 return false
                             } else {            // 한 칸 떨어져 있을 때
                                 if places[row+1][col] != "X" {
